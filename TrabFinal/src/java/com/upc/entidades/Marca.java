@@ -5,13 +5,21 @@
  */
 package com.upc.entidades;
 
-/**
- *
- * @author ACER
- */
-public class Marca {
-    
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="Marca")
+public class Marca implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int cmarca;
+    @Column(name = "nmarca",length = 40,nullable = false)
     private  String nmarca;
 
     public Marca() {

@@ -5,11 +5,60 @@
  */
 package com.upc.entidades;
 
-/**
- *
- * @author ACER
- */
-public class Categoria {
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="Categoria")
+
+
+public class Categoria implements Serializable {
+    
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int ccategoria;
+    @Column (name="ncategoria",length=40,nullable=false)
+    private String ncategoria;
+    @Column(name = "tdescripcion",length = 40,nullable = false)
+    private String tdescripcion;
+    
+    
+    public Categoria(){}
+
+    public Categoria(int ccategoria, String ncategoria, String tdescripcion) {
+        this.ccategoria = ccategoria;
+        this.ncategoria = ncategoria;
+        this.tdescripcion = tdescripcion;
+    }
+
+    public int getCcategoria() {
+        return ccategoria;
+    }
+
+    public void setCcategoria(int ccategoria) {
+        this.ccategoria = ccategoria;
+    }
+
+    public String getNcategoria() {
+        return ncategoria;
+    }
+
+    public void setNcategoria(String ncategoria) {
+        this.ncategoria = ncategoria;
+    }
+
+    public String getTdescripcion() {
+        return tdescripcion;
+    }
+
+    public void setTdescripcion(String tdescripcion) {
+        this.tdescripcion = tdescripcion;
+    }
     
   
     
