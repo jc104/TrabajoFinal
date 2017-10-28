@@ -11,4 +11,6 @@ package com.upc.entidades;
  */
 public class Categoria {
     
+  
+    
 }

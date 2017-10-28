@@ -11,4 +11,34 @@ package com.upc.entidades;
  */
 public class Marca {
     
+    private int cmarca;
+    private  String nmarca;
+
+    public Marca() {
+    }
+
+    public Marca(int cmarca, String nmarca) {
+        this.cmarca = cmarca;
+        this.nmarca = nmarca;
+    }
+
+    public int getCmarca() {
+        return cmarca;
+    }
+
+    public void setCmarca(int cmarca) {
+        this.cmarca = cmarca;
+    }
+
+    public String getNmarca() {
+        return nmarca;
+    }
+
+    public void setNmarca(String nmarca) {
+        this.nmarca = nmarca;
+    }
+    
+    
+            
+    
 }
