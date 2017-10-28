@@ -24,6 +24,8 @@ public interface ProductoDao {
 
     public Producto ListarId(int cproducto);
     
-    public List<Producto> BuscarCategoria(String nproducto);
+    public List<Producto> BuscarProducto(String nproducto);
+    
+    public List<Producto> BuscarTodo (String nproducto);
     
 }

@@ -24,6 +24,6 @@ public interface MarcaDao {
 
     public Marca ListarId(int cmarca);
     
-    public List<Marca> BuscarCategoria(String nmarca);
+    public List<Marca> BuscarMarca(String nmarca);
     
 }
