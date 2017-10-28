@@ -14,7 +14,7 @@ import java.util.List;
  */
 public interface MarcaDao {
     
-        public void insertar(Marca marca);
+    public void insertar(Marca marca);
 
     public void eliminar(int cmarca);
 
