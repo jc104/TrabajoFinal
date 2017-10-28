@@ -15,10 +15,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table (name="Categoria")
-
+   
 
 public class Categoria implements Serializable {
-    
+      
      @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ccategoria;
@@ -34,7 +34,7 @@ public class Categoria implements Serializable {
         this.ccategoria = ccategoria;
         this.ncategoria = ncategoria;
         this.tdescripcion = tdescripcion;
-    }
+}
 
     public int getCcategoria() {
         return ccategoria;
@@ -62,4 +62,4 @@ public class Categoria implements Serializable {
     
   
     
-}
+}   
